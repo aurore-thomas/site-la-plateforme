@@ -1,0 +1,459 @@
+/* FICHIER CSS */
+
+
+/* --------------------------------------------------------------------------------------- */
+/* accueil.css */
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Araboto';
+    src: url(../polices/Araboto-Normal.ttf);
+    format: ttf;
+}
+
+body {
+background-color: #F9F9FC;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+}
+
+.menu {
+    /* Pour que le menu reste en place quand on scroll */
+    position: fixed;
+
+}
+
+#hamburger {
+    /* Pour que la checkbox ne s'affiche pas */
+    display: none;
+  }
+  
+  #hamburger-logo {
+    /* Pour que le curseur soit un pointeur */
+    cursor: pointer;
+    width: 50px;
+    font-size: 1.7em;
+    display: block;
+    color: #336699;
+    /* Pour que le menu hamburger soit "rangé" par défaut */
+    transform: translateX(1200px);
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 235px;
+    margin-top: 10px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateX(1400px);
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px 2px #336699;
+ }
+  
+  #hamburger-logo,
+  nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+  }
+  
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+  #hamburger:checked,
+  #hamburger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translateX(1060px);
+  }
+  
+  nav a {
+    background-color: white;
+    color: #336699;
+    text-decoration: none;
+    font-family: Araboto;
+    padding: 10px 10px 10px 30px;
+  }
+  
+  nav a:hover {
+    /* background: #444; */
+     border : 2px solid #FFA000;
+     border-left: none;
+     border-right: none;
+  }
+  
+
+.img1 {
+    width: 400px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.premierepartie{
+    display:flex;
+}
+
+.fontbleu { 
+     display: flex;
+     background-color: #336699;
+     width: 50%;
+     color:white;
+     flex-direction: column;
+     justify-content: space-evenly;  
+}
+
+.fontbleu p {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;   
+    font-size: 1.7em;
+    font-family: Araboto;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    line-height: 1em;
+    text-align: left;
+}
+
+.firstbutton button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
+    border: 0;
+    width: 400px;
+    height: 95px;
+    font-size: 1.5em;
+    border-radius: 130px;
+    background-color: #FF2063;
+    cursor: pointer;
+    font-family: Araboto;
+    color: white;
+    transition: 0.5s;
+}
+
+.firstbutton button:hover{
+    letter-spacing: 1px;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.annotations{
+    margin : -30px 0 0 35px;
+    font-family: Araboto;
+    font-size: 0.5em;
+}
+
+.annotations p{
+    text-align: center;
+}
+
+.tetes {
+    display: flex;
+    background-color: #336699;
+    width: 225px;
+    height:675px;
+}
+
+.phrase1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+h1 {
+    font-family: Araboto;
+    text-align: center;
+    color:#336699
+}
+
+.formations {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.formationBox {
+    margin: 0 33px 0 33px;
+    width: 360px;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-family: Araboto;
+    color:#336699;
+    box-shadow: 0px 0px 6px 6px #F4F4FB;
+}
+
+.formationImage img{
+    margin: 20px 20px 40px 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.formationDescription {
+    padding: 0 40px 19px 40px;
+}
+
+h2{
+    line-height: 70px;
+}
+
+.formationBouton button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    height:60px;
+    width: 330px;
+    margin-top: 70px;
+    font-size: 1em;
+    font-family: Araboto;
+    color: #fff;
+    border-radius: 30px;
+    background-color:#FFCA4B; 
+    transition: 0.5s;
+}
+
+.formationBouton button:hover{
+    letter-spacing: 1px;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.transformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transformationBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 33px 50px 33px;
+    width: 1200px;
+    height: 145px;
+    background-color: white;
+    font-family: Araboto;
+    color:#336699;
+    box-shadow: 6px 6px 6px 6px #F4F4FB;
+}
+
+.transformationImage{
+    width:110px;
+    height:110px;
+    margin : 17px 17px 17px 50px;
+}
+
+.transformationImage img{
+    width: 110px;
+    height: 110px;
+}
+
+.transformationDescription {
+    width:1000px;
+    height:110px;
+    padding-left: 20px;
+}
+
+.TransformationBouton button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin : 0 0 40px 0;
+    border: 0;
+    height:60px;
+    width: 330px;
+    font-size: 1em;
+    font-family: Araboto;
+    color: #fff;
+    border-radius: 30px;
+    background-color:#FFCA4B; 
+    transition: 0.5s;
+}
+
+.TransformationBouton button:hover{
+    letter-spacing: 1px;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.fondjaune {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFA000;
+    height: 600px;
+}
+
+.temoignage {
+    height: 150px;
+    width: 1000px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temoignage h1{
+    color: white;
+    font-size: 2.5em;
+    font-family: Araboto;
+}
+
+.temoignage p{
+    color: white;
+    font-size: 1.1em;
+    font-family: Araboto;
+    text-align: center;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 320px;
+    width:1200px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    background-color: #313131;
+}
+
+.colonne1 {
+    height: 200px;
+    width: 315px;
+    margin-left: 70px;
+}
+
+.colonne1 img{
+    height: 60px;
+    width: 320px;
+}
+
+.colonne2 {
+    height: 290px;
+    width: 235px;
+    color: #FFFCF2;
+    font-family: Araboto;
+    line-height: 40px;
+    
+}
+
+.colonne3 {
+    height: 290px;
+    width: 235px;
+    color: #FFFCF2;
+    font-family: Araboto;
+    line-height: 40px;
+}
+
+.colonne4 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    height: 290px;
+    width: 235px;
+    color: #FFFCF2;
+    font-family: Araboto;
+    line-height: 40px;
+}
+
+
+.boutonContact button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin : 50px 0 0 15px 0;
+    border: 2px solid #FFFCF2;
+    background-color: #313131;
+    height:40px;
+    width: 155px;
+    font-size: 1.2em;
+    font-family: Araboto;
+    color: #FFFCF2;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.April img{
+    height: 75px;
+    width: 155px;
+    margin-top: 30px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/*      NEWS         */
+
+.partie21 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background-color: #336699;
+}
+
+.titreactualites {
+    padding: 0px 50px 50px 50px;
+    height: 290px;
+    width: 510px;
+}
+
+.titreactualites h2{
+    font-family: Araboto;
+    font-size: 3em;
+    color: white;
+}
+
+.titreactualites p{
+    font-family: Araboto;
+    color: #D4CCFF;
+    line-height: 150px;
+}
+
+.videoactu {
+    height: 290px;
+    width: 510px;
+    background-color: #FFA000;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.newscol {
+    margin : 90px 20px 40px 20px;
+    height: 750px;
+    width: 320px;
+    background-color: #313131;
+}
